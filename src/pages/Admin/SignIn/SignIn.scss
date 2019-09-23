@@ -1,0 +1,80 @@
+@import "../../../scss/index.scss";
+
+.sign-in {
+  background-image: url("../../../assets/img/png/background-v1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    &-logo {
+      padding: 60px 20px;
+      img {
+        width: 100%;
+      }
+    }
+
+    &-tabs {
+      background-color: $background-light;
+
+      .ant-tabs {
+        width: 90vw;
+        @media (min-width: $media-breackpoint-up-lg) {
+          width: auto;
+        }
+      }
+
+      .ant-tabs-nav-container {
+        height: 60px !important;
+      }
+      .ant-tabs-nav {
+        width: 100%;
+      }
+
+      .ant-tabs-tab {
+        width: 50%;
+        height: 60px !important;
+        text-align: center;
+        font-size: 0em + 19px / $defaultFontSize;
+        border-top: 4px solid $border-grey !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        @media (min-width: $media-breackpoint-up-lg) {
+          width: 220px;
+          font-size: 0em + 23px / $defaultFontSize;
+        }
+
+        &:hover {
+          color: $font-grey-dark;
+        }
+        &:before {
+          content: none;
+        }
+        span {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .ant-tabs-tab-active {
+        color: $primary-color !important;
+        border-top: 4px solid $primary-color !important;
+        border-radius: 0 !important;
+        border-right: 0 !important;
+        border-left: 0 !important;
+      }
+
+      .ant-tabs-content {
+        padding: 0 16px 16px 16px;
+        text-align: center;
+      }
+    }
+  }
+}

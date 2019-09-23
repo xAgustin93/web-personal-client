@@ -1,0 +1,48 @@
+@import "../../../scss/index.scss";
+
+.register-form {
+  text-align: left;
+
+  .ant-form-item {
+    &:nth-child(3),
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__input {
+    .ant-input-prefix {
+      i {
+        font-size: 0em + 22px / $defaultFontSize;
+      }
+    }
+
+    input {
+      font-size: 0em + 20px / $defaultFontSize;
+      padding: 20px 20px 20px 40px !important;
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    font-size: 0em + 22px / $defaultFontSize;
+    background-color: $primary-color;
+    color: $font-light;
+    height: 42px;
+
+    &:hover {
+      background-color: $primary-color-hover;
+      color: $font-light;
+    }
+    &:focus,
+    &:active {
+      background-color: $primary-color;
+      color: $font-light;
+      border: 0;
+    }
+  }
+}
