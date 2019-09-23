@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { Form, Icon, Input, Button, Checkbox, notificacion } from "antd";
+import { Form, Icon, Input, Button, Checkbox, notification } from "antd";
+import {
+  emailValidation,
+  minLengthValidation
+} from "../../../utils/formValidation";
 
 import "./RegisterForm.scss";
 
@@ -8,6 +12,12 @@ export default function RegisterForm() {
     email: "",
     password: "",
     repeatPassword: "",
+    privacyPolicy: false
+  });
+  const [formValid, setFormValid] = useState({
+    email: false,
+    password: false,
+    repeatPassword: false,
     privacyPolicy: false
   });
 
@@ -25,9 +35,44 @@ export default function RegisterForm() {
     }
   };
 
+  const inputValidation = e => {
+    const { type, name } = e.target;
+
+    if (type === "email") {
+      setFormValid({ ...formValid, [name]: emailValidation(e.target) });
+    }
+    if (type === "password") {
+      setFormValid({ ...formValid, [name]: minLengthValidation(e.target, 6) });
+    }
+    if (type === "checkbox") {
+      setFormValid({ ...formValid, [name]: e.target.checked });
+    }
+  };
+
   const register = e => {
     e.preventDefault();
-    console.log(inputs);
+    const { email, password, repeatPassword, privacyPolicy } = formValid;
+
+    const emailVal = inputs.email;
+    const passwordVal = inputs.password;
+    const repeatPasswordVal = inputs.repeatPassword;
+    const privacyPolicyVal = inputs.privacyPolicy;
+
+    if (!emailVal || !passwordVal || !repeatPasswordVal || !privacyPolicyVal) {
+      notification["error"]({
+        message: "Todos los campos son obligatorios"
+      });
+    } else {
+      if (passwordVal !== repeatPasswordVal) {
+        notification["error"]({
+          message: "Las contraseñas tienen que ser iguales."
+        });
+      } else {
+        notification["success"]({
+          message: "Cuenta creada...."
+        });
+      }
+    }
   };
 
   return (
@@ -39,6 +84,7 @@ export default function RegisterForm() {
           name="email"
           placeholder="Correo electronico"
           className="register-form__input"
+          onChange={inputValidation}
           value={inputs.email}
         />
       </Form.Item>
@@ -49,6 +95,7 @@ export default function RegisterForm() {
           name="password"
           placeholder="Contraseña"
           className="register-form__input"
+          onChange={inputValidation}
           value={inputs.password}
         />
       </Form.Item>
@@ -59,11 +106,16 @@ export default function RegisterForm() {
           name="repeatPassword"
           placeholder="Repetir contraseña"
           className="register-form__input"
+          onChange={inputValidation}
           value={inputs.repeatPassword}
         />
       </Form.Item>
       <Form.Item>
-        <Checkbox name="privacyPolicy" checked={inputs.privacyPolicy}>
+        <Checkbox
+          name="privacyPolicy"
+          onChange={inputValidation}
+          checked={inputs.privacyPolicy}
+        >
           He leído y acepto la política de privacidad.
         </Checkbox>
       </Form.Item>
