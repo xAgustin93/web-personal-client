@@ -1,0 +1,44 @@
+@import "../../../scss/index.scss";
+
+.login-form {
+  .ant-form-item:last-of-type {
+    margin: 0;
+  }
+
+  &__input {
+    .ant-input-prefix {
+      i {
+        form-size: 0em + 22px / $defaultFontSize;
+      }
+    }
+
+    input {
+      font-size: 0em + 20px / $defaultFontSize;
+      padding: 20px 20px 20px 40px !important;
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    font-size: 0em + 22px / $defaultFontSize;
+    background-color: $primary-color;
+    color: $font-light;
+    height: 42px;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: $primary-color-hover;
+      color: $font-light;
+    }
+    &:focus,
+    &:active {
+      background-color: $primary-color;
+      color: $font-light;
+      border: 0;
+    }
+  }
+}
