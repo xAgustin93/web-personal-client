@@ -1,0 +1,26 @@
+@import "../../../../scss/index.scss";
+
+.post-info {
+  margin-top: 50px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 0;
+    color: $font-light;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  &__creation-date {
+    text-align: center;
+    color: $font-light;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  &__description {
+    color: $primary-color-dark;
+    font-size: 16px;
+    margin-bottom: 100px;
+  }
+}

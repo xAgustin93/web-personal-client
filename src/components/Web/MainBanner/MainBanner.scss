@@ -1,0 +1,38 @@
+@import "../../../scss/index.scss";
+
+.main-banner {
+  position: relative;
+  height: 500px;
+  background-image: url("../../../assets/img/jpg/home-v1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+  }
+
+  .ant-row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    h2 {
+      color: #fff;
+      font-size: 60px;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+}

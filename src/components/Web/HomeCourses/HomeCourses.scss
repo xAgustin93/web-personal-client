@@ -1,0 +1,79 @@
+@import "../../../scss/index.scss";
+
+.home-courses {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &__title {
+    text-align: center;
+
+    h2 {
+      color: $font-light;
+      font-weight: bold;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+  }
+
+  .row-courses {
+    .ant-col {
+      padding: 15px !important;
+    }
+  }
+
+  &__card {
+    border: 0;
+    background-color: $background-dark-light-web;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+
+    .ant-card-body {
+      text-align: center;
+
+      .ant-card-meta-title,
+      .ant-card-meta-description {
+        color: $font-light;
+      }
+
+      .ant-card-meta-title {
+        font-weight: bold;
+      }
+    }
+
+    .ant-card-actions {
+      background-color: transparent;
+      border: 0;
+
+      button {
+        width: 90%;
+        height: 35px;
+        background-color: transparent;
+        color: $font-light;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+
+  &__more {
+    text-align: center;
+
+    button {
+      background-color: $primary-color;
+      border: 0;
+      color: $font-light;
+      width: 200px;
+      height: 40px;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $primary-color-hover;
+        color: $font-light;
+      }
+    }
+  }
+}

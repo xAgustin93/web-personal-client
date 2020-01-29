@@ -1,0 +1,33 @@
+@import "../../../scss/index.scss";
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+
+  a {
+    display: flex;
+    margin-right: 10px;
+    padding: 5px 8px;
+    border-radius: 5px;
+
+    &.youtube {
+      background-color: $youtube;
+    }
+    &.twitter {
+      background-color: $twitter;
+    }
+    &.facebook {
+      background-color: $facebook;
+    }
+    &.linkedin {
+      background-color: $linkedin;
+    }
+
+    svg {
+      width: 15px;
+      height: 20px;
+    }
+  }
+}

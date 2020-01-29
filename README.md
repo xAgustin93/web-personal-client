@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Web Personal MERN Full Stack: MongoDB, Express, React y Node
 
-## Available Scripts
+_Curso en Udemy donde se explica paso a paso la creacion de una web personal con MongoDB, Node JS, Express JS y React JS._
 
-In the project directory, you can run:
+**Url del Curso:** .......
 
-### `npm start`
+## Comenzando 🚀
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_En este curso vas a aprender a crear una aplicación web que será una web personal con panel de Administrador protegido por un login con **JWT**, todo paso a paso usando el **MERN Stack** que está compuesto por **MongoDB, Express JS, React JS y Node JS**._
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+_Crearemos nuestra aplicación desde cero sin usar nada prefabricado, **aprenderemos base de datos no relacional con MongoDB**, en el **Backend crearemos un API REST** con **Node JS** y **Express JS** y en el **Frontend** usaremos **React JS con Hooks** y en la **parte del CSS usaremos SASS**._
 
-### `npm test`
+_Cuando tengamos nuestra aplicación terminara aprenderemos a **desplegar nuestra aplicación en la nube**._
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_Este curso tiene como objetivo enseñarte a desarrollar cualquier tipo de aplicación desde cero, **convirtiéndote** en un **desarrollador Full Stack** sobre el **MERN Stack**._
 
-### `npm run build`
+### Que veremos en el curso
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Instalación y configuración del entorno de trabajo.
+- Desacoplaremos nuestro proyecto en tres bloques, Base de Datos, Backend y Frontend.
+- Crearemos una API REST desde cero conectada a MongoDB.
+- Añadiremos al Frontend SASS.
+- Crearemos una configuración dinámica de React Router Dom.
+- Crearemos Sistemas de Layouts.
+- Creamos un sistema de Auth protegido con JWT y tendremos el AccessToken para permitir acceso y RefreshToken para recuperar sesiones.
+- Creamos un panel de Administrador para que nuestros usuarios con privilegios puedan gestionar la web.
+- Construiremos un Menú completamente dinámico gestionado desde el panel de administrador.
+- Crearemos una Home Page llamativa.
+- Programaremos un Sistema de Newsletter 100% funcional desde cero.
+- Crearemos una sección para subir cursos conectada a la API de Afiliados Udemy.
+- Creamos un Sistema de Blog, con paginación y creación de URL dinámicas todo gestionado desde el panel de Administrador.
+- Gestionaremos el SEO On Page para mejorar nuestra visibilidad en Google.
+- Desplegaremos nuestra aplicación en varios servidores en la nube.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+⌨️ con ❤️ por [xAgustin93](https://github.com/xAgustin93) 😊

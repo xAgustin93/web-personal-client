@@ -2,6 +2,8 @@ $defaultFontSize: 16px;
 
 $primary-color: #0098d3;
 $primary-color-hover: #0280b3;
+$primary-color-light: #6ec1e4;
+$primary-color-dark: #8698a5;
 
 $menu-color: #252527;
 
@@ -27,9 +29,17 @@ $background-dark-light: #252527;
 $background-dark: #000;
 $background-success: #84b84c1f;
 $background-error: #ff00001f;
+$background-dark-web: #16202b;
+$background-dark-light-web: #1a2734;
 
 $success: #84b84c;
 $error: #f00;
+
+// Social Color
+$youtube: #cd201f;
+$twitter: #1da1f2;
+$facebook: #3b5998;
+$linkedin: #0077b5;
 
 // Responsive down size
 $media-breackpoint-down-xs: 413.98px;
