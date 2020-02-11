@@ -2,7 +2,8 @@
 
 _Curso en Udemy donde se explica paso a paso la creacion de una web personal con MongoDB, Node JS, Express JS y React JS._
 
-**Url del Curso:** .......
+**Curso:** https://courses.agustinnavarrogaldon.com/mern-stack
+**Demo:** https://web-personal.netlify.com/
 
 ## Comenzando 🚀
 
@@ -19,6 +20,7 @@ _Este curso tiene como objetivo enseñarte a desarrollar cualquier tipo de aplic
 - Instalación y configuración del entorno de trabajo.
 - Desacoplaremos nuestro proyecto en tres bloques, Base de Datos, Backend y Frontend.
 - Crearemos una API REST desde cero conectada a MongoDB.
+- Aprenderemos a usar el ODM Mongoose.
 - Añadiremos al Frontend SASS.
 - Crearemos una configuración dinámica de React Router Dom.
 - Crearemos Sistemas de Layouts.
