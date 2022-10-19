@@ -1,0 +1,24 @@
+@import "~/src/scss/index.scss";
+
+.client-layout {
+  background-color: $background-dark-web;
+  min-height: 100vh;
+
+  &__footer {
+    margin-top: 50px;
+    padding: 20px 0 10px 0;
+    border-top: 3px solid $primary;
+
+    > .ui.container {
+      display: flex;
+
+      &:last-of-type {
+        justify-content: space-between;
+        margin-top: 30px;
+        color: $text-light;
+        font-size: 12px;
+        opacity: 0.4;
+      }
+    }
+  }
+}

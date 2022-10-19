@@ -1,0 +1,65 @@
+@import "~/src/scss/index.scss";
+
+.home-courses {
+  > h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $text-light;
+    margin: 50px 0 30px 0;
+  }
+
+  &__all-courses {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+    > a {
+      width: 50%;
+      display: flex;
+      padding: 10px;
+      &:hover {
+        opacity: 0.6;
+      }
+
+      .ui.image {
+        height: 100px;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+
+        > span {
+          color: $text-light;
+
+          &:first-of-type {
+            font-weight: bold;
+            font-size: 16px;
+          }
+          &:last-of-type {
+            opacity: 0.4;
+            font-size: 12px;
+            padding-top: 6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+          }
+        }
+      }
+    }
+  }
+
+  &__more {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    > .ui.button {
+      width: 200px;
+    }
+  }
+}

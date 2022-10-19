@@ -1,0 +1,27 @@
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e4e4d4;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  &:nth-last-of-type(2) {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-weight: bold;
+    }
+
+    &-path {
+      opacity: 0.6;
+    }
+  }
+}

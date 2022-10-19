@@ -1,0 +1,51 @@
+@import "~/src/scss/index.scss";
+
+.course {
+  margin: 10px;
+  box-shadow: 0 0 5px 0px rgb(0 0 0 / 30%);
+
+  &:hover {
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 75%);
+  }
+
+  &__info {
+    padding: 15px;
+    color: $text-light;
+
+    > h3 {
+      font-size: 14px;
+      margin-bottom: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+
+    > p {
+      font-size: 12px;
+      opacity: 0.4;
+      line-height: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .ui.button {
+      font-size: 12px;
+    }
+
+    &-footer {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      i.icon {
+        color: $text-light !important;
+        opacity: 0.6;
+      }
+    }
+  }
+}

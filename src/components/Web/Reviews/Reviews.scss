@@ -1,0 +1,64 @@
+@import "~/src/scss/index.scss";
+
+.reviews {
+  margin-top: 80px;
+
+  > h2 {
+    text-align: center;
+    color: $text-light;
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    > div {
+      width: 33.33%;
+      color: $text-light;
+      text-align: center;
+      padding: 0 20px;
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 80px;
+
+      > p {
+        text-align: justify;
+        opacity: 0.4;
+      }
+    }
+
+    &-user {
+      display: flex;
+      align-items: center;
+
+      > .ui.image {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        > span {
+          &:first-of-type {
+            font-weight: bold;
+            font-size: 16px;
+          }
+          &:last-of-type {
+            opacity: 0.4;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

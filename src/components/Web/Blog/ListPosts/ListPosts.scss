@@ -1,0 +1,31 @@
+@import "~/src/scss/index.scss";
+
+.list-posts-web {
+  margin-top: 70px;
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      width: 33.33%;
+      padding: 20px;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    a {
+      color: $text-light !important;
+      opacity: 0.6;
+
+      &.active {
+        opacity: 1;
+        border-color: $text-light !important;
+      }
+    }
+  }
+}

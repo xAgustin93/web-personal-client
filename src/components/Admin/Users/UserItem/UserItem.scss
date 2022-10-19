@@ -1,0 +1,38 @@
+@import "~/src/scss/index.scss";
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    & > .ui.image {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    p {
+      margin: 0;
+
+      &:first-of-type {
+        font-weight: bold;
+      }
+      &:last-of-type {
+        opacity: 0.4;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "~/src/scss/index.scss";
+
+.courses-page {
+  > .ui.image {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  > h2 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 100;
+    color: $text-light;
+    opacity: 0.6;
+  }
+
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 33.33%;
+    }
+  }
+
+  .more {
+    text-align: center;
+
+    .ui.button {
+      margin: 0;
+      margin-top: 30px;
+    }
+  }
+}

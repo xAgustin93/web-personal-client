@@ -1,0 +1,30 @@
+@import "~/src/scss/index.scss";
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  &:nth-last-of-type(2) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    > .ui.image {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    p {
+      margin: 0;
+      font-weight: bold;
+    }
+  }
+}
